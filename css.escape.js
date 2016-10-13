@@ -87,6 +87,6 @@
 		root.CSS = {};
 	}
 
-	root.CSS.escape = cssEscape;
+	root.CSS = Object.assign(root.CSS, { escape: cssEscape });
 	return cssEscape;
 })(window);
